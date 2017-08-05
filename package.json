@@ -1,6 +1,9 @@
 {
   "name": "orson",
   "private": true,
+  "scripts": {
+    "test": "bin/rails rubocop && standard && bin/rails test"
+  },
   "dependencies": {
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.25.0",
@@ -35,6 +38,13 @@
     "webpack-merge": "^4.1.0"
   },
   "devDependencies": {
+    "standard": "^10.0.2",
     "webpack-dev-server": "^2.6.1"
+  },
+  "standard": {
+    "globals": [
+      "App",
+      "ActionCable"
+    ]
   }
 }

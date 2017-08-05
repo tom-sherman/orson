@@ -4,6 +4,7 @@ AllCops:
     - db/schema.rb
     - node_modules/**/*
     - bin/*
+    - public/**/*
 
 Layout/EndOfLine:
   EnforcedStyle: lf

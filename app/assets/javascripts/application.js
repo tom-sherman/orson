@@ -10,6 +10,8 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+/* eslint-disable */
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+/* eslint-enable */
