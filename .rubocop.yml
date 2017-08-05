@@ -1,0 +1,12 @@
+AllCops:
+  Exclude:
+    - db/migrate/**
+    - db/schema.rb
+    - node_modules/**/*
+    - bin/*
+
+Layout/EndOfLine:
+  EnforcedStyle: lf
+
+Style/ClassAndModuleChildren:
+  Enabled: false
