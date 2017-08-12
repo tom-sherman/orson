@@ -11,3 +11,6 @@ Layout/EndOfLine:
 
 Style/ClassAndModuleChildren:
   Enabled: false
+
+Metrics/MethodLength:
+  Max: 15

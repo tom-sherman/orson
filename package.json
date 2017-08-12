@@ -2,7 +2,8 @@
   "name": "orson",
   "private": true,
   "scripts": {
-    "test": "bin/rails rubocop && standard && bin/rails test"
+    "test": "bin/rails rubocop && standard && bin/rails test",
+    "standard": "standard"
   },
   "dependencies": {
     "autoprefixer": "^7.1.2",
