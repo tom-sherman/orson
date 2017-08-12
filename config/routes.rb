@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :media
   resources :libraries
   get 'pages', to: 'pages#index'
 
