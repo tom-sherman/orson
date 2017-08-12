@@ -3,6 +3,7 @@ require 'test_helper'
 class MediaControllerTest < ActionDispatch::IntegrationTest
   setup do
     @medium = media(:one)
+    @library = libraries(:one)
   end
 
   test 'should get index' do
@@ -17,7 +18,8 @@ class MediaControllerTest < ActionDispatch::IntegrationTest
 
   test 'should create medium' do
     assert_difference('Medium.count') do
-      post media_url, params: { medium: { name: @medium.name } }
+      post media_url, params: { medium: { name: @medium.name, \
+                                          library_id: @library.id } }
     end
 
     assert_redirected_to medium_url(Medium.last)
@@ -34,7 +36,8 @@ class MediaControllerTest < ActionDispatch::IntegrationTest
   end
 
   test 'should update medium' do
-    patch medium_url(@medium), params: { medium: { name: @medium.name } }
+    patch medium_url(@medium), params: { medium: { name: @medium.name, \
+                                                   library_id: @library.id } }
     assert_redirected_to medium_url(@medium)
   end
 
