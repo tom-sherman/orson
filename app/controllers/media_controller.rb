@@ -1,6 +1,6 @@
 # Media controller. Singular: `medium`
 class MediaController < ApplicationController
-  before_action :set_medium, only: %i[show edit update destroy]
+  before_action :set_medium, only: %i[show edit update destroy video]
 
   # GET /media
   # GET /media.json
@@ -68,6 +68,13 @@ class MediaController < ApplicationController
       end
       format.json { head :no_content }
     end
+  end
+
+  def video
+    # send_data File.read(@medium.path), disposition: 'inline'
+    send_file @medium.path, type: 'video/mp4',
+                            disposition: 'inline',
+                            range: true
   end
 
   private

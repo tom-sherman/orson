@@ -3,6 +3,7 @@ render_partial |= false
 json.extract! medium, :id, :name
 
 unless render_partial
+  json.path medium.path
   json.library do
     json.partial! medium.library, render_partial: true
   end

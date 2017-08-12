@@ -5,5 +5,9 @@
   <%= @medium.name %>
 </p>
 
+<video src="/video/<%= @medium.id %>.mp4" controls>
+
+</video>
+
 <%= link_to 'Edit', edit_medium_path(@medium) %> |
 <%= link_to 'Back', media_path %>
