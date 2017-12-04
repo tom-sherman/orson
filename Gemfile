@@ -32,6 +32,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 
 gem 'send_file_with_range', path: '/home/tom/send_file_with_range'
+gem 'streamio-ffmpeg'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
