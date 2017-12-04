@@ -31,9 +31,7 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-gem 'send_file_with_range', \
-    git: 'https://github.com/metalels/send_file_with_range.git',
-    branch: 'rails51'
+gem 'send_file_with_range', path: '/home/tom/send_file_with_range'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

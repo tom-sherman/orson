@@ -1,7 +1,5 @@
-GIT
-  remote: https://github.com/metalels/send_file_with_range.git
-  revision: 008acf58ac5e7b4be1f2319ef3fcad5187a8759d
-  branch: rails51
+PATH
+  remote: /home/tom/send_file_with_range
   specs:
     send_file_with_range (1.0.0)
 

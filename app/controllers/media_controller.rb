@@ -72,9 +72,10 @@ class MediaController < ApplicationController
 
   def video
     # send_data File.read(@medium.path), disposition: 'inline'
-    send_file @medium.path, type: 'video/mp4',
-                            disposition: 'inline',
-                            range: true
+    send_file_with_range @medium.path, type: 'video/mp4',
+                                       disposition: 'inline',
+                                       range: true,
+                                       buffer_size: 512_000 # Send around 512kib
   end
 
   private
