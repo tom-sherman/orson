@@ -78,6 +78,11 @@ class MediaController < ApplicationController
                                        buffer_size: 512_000 # Send around 512kib
   end
 
+  # This currently just spits out the raw ffmpeg metadata as json
+  def full_metadata
+    @medium = Medium.find(params[:id])
+  end
+
   private
 
   # Use callbacks to share common setup or constraints between actions.
