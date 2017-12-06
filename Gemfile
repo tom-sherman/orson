@@ -46,6 +46,7 @@ group :development, :test do
   gem 'minitest-reporters'
   gem 'rubocop'
   gem 'selenium-webdriver'
+  gem 'mocha'
 end
 
 group :development do
