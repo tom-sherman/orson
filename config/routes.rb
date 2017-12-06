@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get '/pages', to: 'pages#index'
   get '/video/:id.mp4', to: 'media#video'
   get '/media/:id/metadata.json', to: 'media#full_metadata'
+  get '/list', to: 'directory#list'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

@@ -1,0 +1,12 @@
+<ul>
+  <li><%= link_to '..', "/list?path=#{@directory.parent.absolute_path}" %></li>
+  <% @entries.each do |entry| %>
+    <li>
+      <% if entry.empty? %>
+        <%= entry.name %>
+      <% else %>
+        <%= link_to entry.name, "/list?path=#{entry.absolute_path}" %>
+      <% end %>
+    </li>
+  <% end %>
+</ul>
