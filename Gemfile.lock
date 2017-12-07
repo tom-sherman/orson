@@ -1,5 +1,6 @@
-PATH
-  remote: /home/tom/send_file_with_range
+GIT
+  remote: https://github.com/tom-sherman/send_file_with_range.git
+  revision: 37b6e00f927cd3d614ce163d104f267e0173ae28
   specs:
     send_file_with_range (1.0.0)
 

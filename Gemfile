@@ -31,7 +31,7 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-gem 'send_file_with_range', path: '/home/tom/send_file_with_range'
+gem 'send_file_with_range', git: 'https://github.com/tom-sherman/send_file_with_range.git'
 gem 'streamio-ffmpeg'
 
 # Use Capistrano for deployment
@@ -44,9 +44,9 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'minitest-reporters'
+  gem 'mocha'
   gem 'rubocop'
   gem 'selenium-webdriver'
-  gem 'mocha'
 end
 
 group :development do
